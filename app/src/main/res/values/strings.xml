@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Radio Alarm</string>
+    <string name="action_delete">Delete</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Alarm list</string>
+    <string name="second_fragment_label">Edit alarm</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="close">Close</string>
+    <string name="test_radio">Test radio</string>
+    <string name="stop_radio">Stop radio</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="radio_not_working">Radio does not work. Choose another one.</string>
+    <string name="error">Error</string>
+</resources>

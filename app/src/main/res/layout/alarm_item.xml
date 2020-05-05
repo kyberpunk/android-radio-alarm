@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/text_alarm_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+        tools:text="12:00"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="53dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_alarm_days"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="P,Ú,S,Č,P,S,N"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_alarm_radio"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="ČRo Olomouc"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch_alarm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20" />
+
+</LinearLayout>

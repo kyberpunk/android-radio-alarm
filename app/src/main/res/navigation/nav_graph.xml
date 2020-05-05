@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/alarm_list_fragment">
+
+    <fragment
+        android:id="@+id/alarm_list_fragment"
+        android:name="org.kyberpunk.alarmclock.ui.AlarmListFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/alarm_list_fragment">
+
+        <action
+            android:id="@+id/action_new_alarm"
+            app:destination="@id/edit_alarm_fragment" />
+
+        <action
+            android:id="@+id/action_edit_alarm"
+            app:destination="@id/edit_alarm_fragment">
+            <argument
+                android:name="alarm_id"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/edit_alarm_fragment"
+        android:name="org.kyberpunk.alarmclock.ui.EditAlarmFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/edit_alarm_fragment">
+
+        <argument
+            android:name="alarm_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+        <action
+            android:id="@+id/action_back_to_list"
+            app:destination="@id/alarm_list_fragment" />
+    </fragment>
+</navigation>

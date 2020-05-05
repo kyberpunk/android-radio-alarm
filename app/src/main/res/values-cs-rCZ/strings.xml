@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rádiový budík</string>
+    <string name="close">Zavřít</string>
+    <string name="test_radio">Test rádia</string>
+    <string name="action_delete">Smazat</string>
+    <string name="first_fragment_label">List budíků</string>
+    <string name="second_fragment_label">Editace budíku</string>
+    <string name="next">Další</string>
+    <string name="previous">Předchozí</string>
+    <string name="stop_radio">Zastavit rádio</string>
+    <string name="save">Uložit</string>
+    <string name="cancel">Zrušit</string>
+    <string name="radio_not_working">Rádio nefunguje. Zkuste zvolit jiné.</string>
+    <string name="error">Chyba</string>
+</resources>
